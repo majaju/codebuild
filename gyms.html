@@ -1,5 +1,7 @@
 
 
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,15 +11,15 @@
 <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.1/css/all.css">
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-
-
-
 <title>Aarya Restaurant</title>
 <style>
 body{
 background:url(bg1.jpg)no-repeat center center fixed;
 background-size:cover;
 font-family:sans-serif;
+display:flex;
+flex-direction:column;
+min-height: calc(100vh-211px-58px);
 }
 header{
 width:80%;
@@ -45,8 +47,6 @@ float: left;
 margin: 10px auto;
 text-align: center;
 }
-
-
 
 .active{
 color:gold;
@@ -83,7 +83,91 @@ border-radius: 50%;
 {
 padding-left:lrem;
 }
+ul li a:hover{
+	background-color: green;
+	color: #fff;
+}
+#footer{
+ background-color:black;
+ flex: 0 0 45px;
+ margin-top:auto;
+ }
+ 
+a{
+text-decoration:none;
+outline:none;
+}
+.footer-main-div{
+width:100%;
+height:auto;
+margin:auto;
+background: rgba(6, 0, 0, 0.60);
+padding:20px 0px;
+color:white;
+bottom:0;
+left:0;
+position:fixed;
+}
 
+
+.footer-bottom {
+width:100%;
+height:auto;
+margin:auto;
+margin-bottom:0;
+background: #92a8d1;
+padding:1px;
+margin-top:5px;
+position:fixed;
+}
+.footer-bottom p{
+font-family:arial;
+font-size:14px;
+text-align:center;
+color:#fff;
+font-weight:600;
+letter-spacing:0.5px;
+}
+
+.footer-bottom p a{
+color:#fff;
+}
+
+
+.footer-social-icons{
+width:100%;
+height:auto;
+margin:auto;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
 
 
 </style>
@@ -135,150 +219,7 @@ In hendrerit gravida rutrum quisque non.</p>
 </div>
 </div>
 </showcase>
-<a href="#"><button class="btn">Read More</button></a>
 
-<style>
-body{display:flex;
-flex-direction:column;
-min-height: calc(100vh-211px-58px);
-}
-ul li a:hover{
-	background-color: green;
-	color: #fff;
-}
-#footer{
- background-color:black;
- flex: 0 0 50px;
- margin-top:auto;
- }
- 
-a{
-text-decoration:none;
-outline:none;
-}
-.footer-main-div{
-width:100%;
-height:auto;
-margin:auto;
-background: rgba(6, 0, 0, 0.60);
-padding:20px 0px;
-color:white;
-bottom:0;
-left:0;
-position:fixed;
-}
-
-
-.footer-menu-one{
-width:auto;
-height:auto;
-margin:auto;
-margin-top:5px;
-
-}
-
-.footer-menu-one ul{
-margin:0px;
-padding:0px;
-text-align:center;
-}
-
-.footer-menu-one ul li{
-display:inline-block;
-margin:0px 5px;
-}
-.footer-menu-one ul li a{
-
-font-family:arial;
-font-size:12px;
-font-weight:600;
-color:#fff;
-text-transform:uppercase;}
-
-.footer-menu-two{
-width:auto;
-height:auto;
-margin:auto;
-margin-top:5x;
-}
-
-.footer-menu-two ul{
-margin:0px;
-padding:0px;
-text-align:center;
-}
-
-.footer-menu-two ul li{
-display:inline-block;
-margin:0px 5px;
-}
-.footer-menu-two ul li a{
-
-font-family:arial;
-font-size:12px;
-font-weight:600;
-color:#fff;
-text-transform:uppercase;}
-
-.footer-bottom {
-width:100%;
-height:auto;
-margin:auto;
-margin-bottom:0;
-background: #92a8d1;
-padding:1px;
-margin-top:5px;
-position:fixed;
-}
-.footer-bottom p{
-font-family:arial;
-font-size:14px;
-text-align:center;
-color:#fff;
-font-weight:600;
-letter-spacing:0.5px;
-}
-
-.footer-bottom p a{
-color:#fff;
-}
-
-
-.footer-social-icons{
-width:100%;
-height:auto;
-margin:auto;
-}
-
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-  background: #3B5998;
-  color: white;
-}
-
-.fa-google {
-  background: #dd4b39;
-  color: white;
-}
-
-.fa-youtube {
-  background: #bb0000;
-  color: white;
-}
-</style>
 <div  id="footer" class="footer-main-div">
 <center><div class="footer-social-icons">
 <a href="#" class="fa fa-facebook"></a>
@@ -287,26 +228,10 @@ margin:auto;
 </div></center>
 
 
-<div class="footer-menu-one">
-<ul>
-<li><a href="#">Home </a></li>
-<li><a href="#">About Us </a></li>
-<li><a href="#">Menu </a></li>
-<li><a href="#">Contact Us</a></li>
-</ul>
-</div>
-<div class="footer-menu-two">
-<ul>
-<li><a href="#">Gallery </a></li>
-<li><a href="#">Blog </a></li>
-<li><a href="#">News</a></li>
-</ul>
-</div>
-
 <div class="footer-bottom">
 <p>Design by:<a href="#">Mansi codebuild</a></p>
 </div>
-
+</footer>
 
 </div>
 
